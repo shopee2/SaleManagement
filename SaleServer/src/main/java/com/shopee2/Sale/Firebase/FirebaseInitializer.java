@@ -5,6 +5,7 @@ import java.io.InputStream;
 
 import javax.annotation.PostConstruct;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 
@@ -18,8 +19,10 @@ import com.google.firebase.cloud.FirestoreClient;
 public class FirebaseInitializer {
 	@PostConstruct
 	public void initDB() throws IOException{
-		InputStream serviceAccount = this.getClass().getClassLoader()
-				.getResourceAsStream("./sop-sellermanagement-firebase-adminsdk-a3q2s-27464b78fc.json");
+
+		
+		ClassPathResource resource = new ClassPathResource("sop-sellermanagement-firebase-adminsdk-a3q2s-27464b78fc.json");
+		InputStream serviceAccount = resource.getInputStream();
 
 				FirebaseOptions options = new FirebaseOptions.Builder()
 				  .setCredentials(GoogleCredentials.fromStream(serviceAccount))

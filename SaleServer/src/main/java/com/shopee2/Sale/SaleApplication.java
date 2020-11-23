@@ -8,6 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
+
 @ComponentScan("com.shopee2")
 public class SaleApplication {
 
