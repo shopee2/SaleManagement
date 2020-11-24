@@ -51,6 +51,7 @@
       <groupId>org.springframework.cloud</groupId>  
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId> 
     </dependency> 
+    
   </dependencies>  
   <dependencyManagement> 
     <dependencies> 
@@ -70,7 +71,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId> 
       </plugin>  
       <plugin> 
-        <groupId>com.microsoft.azure</groupId>  
+       	<groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>1.7.0</version>  
         <configuration> 
