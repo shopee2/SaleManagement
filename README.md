@@ -2,4 +2,4 @@
 https://sop-sale.azurewebsites.net
 
 ### Swagger
-https://sop-sale.azurewebsites.net/swagger-ui.html#/
+https://app.swaggerhub.com/apis/Champchips/swagger-sale_management/1.0.0#/
